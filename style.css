@@ -1,0 +1,231 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfaf4;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 1rem;
+}
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff8ec;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+header .logo {
+    color: #b3574a;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+  
+header nav a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+  
+header nav a:hover {
+    color: #b3574a;
+}
+  
+header input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 200px;
+}
+  
+.banner {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #faf3e7;
+    color: #333;
+}
+  
+.banner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+  
+.banner h1 {
+    font-size: 2rem;
+    color: #b3574a;
+}
+  
+.banner p {
+    margin: 0.5rem 0;
+}
+  
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+  
+.main-content h2 {
+    color: #b3574a;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+  
+.recipe-card {
+    background: #ffffff;
+    border: 1px solid #f0ece3;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    padding: 1rem;
+}
+  
+  .recipe-card:hover {
+    transform: scale(1.03);
+}
+  
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+  
+.recipe-card h3 {
+    font-size: 1.3rem;
+    color: #b3574a;
+    margin: 0.5rem 0;
+}
+  
+.recipe-card p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+.recipe-card span {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #888;
+}
+  
+.cuisine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+  
+.cuisine-card {
+    background-size: cover;
+    background-position: center;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 8px;
+    color: #fff;
+    height: 200px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+  
+.cuisine-card h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+  
+.cuisine-card:hover {
+    transform: scale(1.05);
+}
+  
+.cuisine-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    z-index: 1;
+}
+  
+  .cuisine-card h3 {
+    z-index: 2;
+  }
+  
+aside {
+    background-color: #fff8ec;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+  
+aside h2 {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #555;
+}
+  
+.pantry-input {
+    display: flex;
+    margin-top: 1rem;
+}
+  
+.pantry-input input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 20px 0 0 20px;
+}
+  
+.pantry-input button {
+    padding: 0.5rem 1rem;
+    background-color: #b3574a;
+    color: #fff;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.pantry-input button:hover {
+    background-color: #a3453c;
+}
+  
+.suggestions {
+    margin-top: 1rem;
+}
+  
+@media (min-width: 768px) {
+    header input[type="text"] {
+      width: 300px;
+ }
+  
+ .recipe-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+ }
+  
+ .recipe-card img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+ }
+}
+  

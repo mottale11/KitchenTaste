@@ -1,10 +1,152 @@
 <!DOCUMENT html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KitchenTaste</title>
+    <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
-    <h1>Explore Global Flavors</h1>
+    <header>
+      <h2 class="logo">KitchenTaste</h2>
+      <nav>
+        <a href="#Home">Home</a>
+        <a href="#Recipes">Recipes</a>
+        <a href="#Cuisine Explorer">Cuisine Explorer</a>
+        <a href="#Plantry Chef">Pantry Chef</a>
+        <a href="#Meal Planner">Meal Planner</a>
+        <a href="#About">About</a>
+      </nav>
+      <input type="text" placeholder="Search for recipes...">
+    </header>
+
+ <!-- banner section    -->
+    <section class="banner" id="banner">
+      <img src="images/banner_image.jpeg.jpeg" width="400" height="300">
+      <h1>Explore Global Flavors</h1>
+      <p>Discover recipes from around the world, curated for flavor enthusiasts.</p>
+      <p>Satisfy Your Cravings with Our Most Loved Recipes Discover our most popular recipes handpicked just for you! Each dish has been rated by our food-loving community and carefully curated to bring you a variety of flavors. With something for every taste and dietary need, these recipes are sure to inspire your next meal.</p>
+        <h3>Quick Tips</h3>
+        <ol>
+          <li>Click on any recipe to view full ingredients, instructions, and pro tips!</li>
+          <li>Look for dietary icons (🌱 Vegan, 🍞 Gluten-Free, 🥜 Nut-Free) to find meals that suit your lifestyle.</li>
+          <li>Recipes are star-rated, making it easy to see what’s most loved by our community.</li>
+        </ol>
+        <h2>Simply scroll, select, and get ready to cook something unforgettable!</h2>
+      <br>
+    </section>
+
+<!-- main content -->
+ <main class="main-content">
+  <!-- Recipes -->
+   <section class="Recipes" id="Recipes">
+    <h2>Recipes</h2>
+    <div class="recipe-card">
+      <img src="images/Birria-Tacos.jpg" width="700" height="500">
+      <h3>Birria-Tacos</h3>
+      <p>Traditional Mexican tacos with slow-cooked beef, rich consommé for dipping, and a crispy cheese-filled shell. The deep flavors make these tacos irresistible and perfect for gatherings.</p>
+      <span>🌮 Beef | Gluten-Free | ⭐ 4.9/5</span>
+    </div><br>
+
+    <div class="recipe-card">
+      <img src="images/Kimchi Fried Rice.jpeg" width="500" height="700">
+      <h3>Kimchi Fried Rice</h3>
+      <p>A bold Korean fried rice dish featuring kimchi’s tangy flavor, soy sauce, and a fried egg on top. Perfect for leftovers and a quick, flavor-packed meal.</p>
+      <span>🍝 Vegetarian | Contains Dairy
+        ⭐ 4.8 / 5</span>
+    </div><br>
+
+    <div class="recipe-card">
+      <img src="images/Pasta alla Vodka.jpeg">
+      <h3>Pasta alla Vodka</h3>
+      <p>A creamy pasta dish with a rich vodka-infused tomato sauce. This classic Italian-American recipe is smooth and comforting, perfect for cozy dinners.</p>
+      <span>🍝 Vegetarian | Contains Dairy
+        ⭐ 4.8 / 5</span>
+    </div><br>
+
+    <div class="recipe-card">
+      <img src="images/Miso Butter Salmon.jpeg">
+      <h3>Miso Butter Salmon</h3>
+      <p>A savory twist on salmon, with a glaze of miso and butter. This Japanese-inspired recipe brings rich umami flavor to a simple, healthy protein option.</p>
+      <span>🐟 Gluten-Free
+        ⭐ 4.6 / 5</span>
+    </div>
+
+    <div class="recipe-card">
+      <img src="images/Whipped Ricotta Toasts.jpeg">
+      <h3>Whipped Ricotta Toasts</h3>
+      <p>Whipped ricotta on toast topped with honey, figs, tomatoes, or pesto. Perfect for breakfast or as a snack, this dish is both versatile and satisfying.</p>
+      <span>🍞 Vegetarian | Gluten-Free Option
+        ⭐ 4.5 / 5</span>
+    </div>
+
+    <div class="recipe-card">
+      <img src="recipe2.jpg">
+      <h3>Matcha Baked Donuts</h3>
+      <p>Baked donuts with matcha flavor, healthier than fried versions and with a delicate green tea taste. Often topped with glaze or powdered sugar for a sweet finish.</p>
+      <span>🍩 Vegetarian
+        ⭐ 4.7 / 5</span>
+    </div>
+
+    <div class="recipe-card">
+      <img src="recipe2.jpg">
+      <h3>Gochujang Chicken Wings</h3>
+      <p>Korean-style spicy chicken wings with a glaze of gochujang chili paste, offering a bold, savory heat. Ideal for fans of spicy and flavorful wings.</p>
+      <span>🍗 Spicy
+        ⭐ 4.8 / 5</span>
+    </div>
+
+    <div class="recipe-card">
+      <img src="recipe2.jpg">
+      <h3>Korean Corn Dogs</h3>
+      <p>These unique corn dogs are coated in batter, fried crispy, and dusted with sugar. Sometimes topped with sauces for an exciting mix of sweet and savory.</p>
+      <span>🌭 Contains Gluten
+        ⭐ 4.9 / 5</span>
+    </div>
+   </section>
+
+   <!-- Cuisine -->
+    <section class="Cuisine Explorer" id="Cuisine Explorer">
+      <h2>Cuisine Explorer</h2>
+      <div class="cuisine-grid">
+        <!-- cuisine-cards -->
+         <div class="cuisine-card" style="background-image: url('italian-cuisine.jpg');">
+          <h3>Italian</h3>
+         </div>
+         <div class="cuisine-card" style="background-image: url('mexican-cuisine.jpg');">
+          <h3>Mexican</h3>
+         </div>
+        </div>
+        <div class="cuisine-card" style="background-image: url('japanese-cuisine.jpg');">
+          <h3>Japanese</h3>
+        </div>
+        <div class="cuisine-card" style="background-image: url('indian-cuisine.jpg');">
+          <h3>Indian</h3>
+        </div>
+        <div class="cuisine-card" style="background-image: url('chinese-cuisine.jpg');">
+          <h3>Chinese</h3>
+        </div>
+        <div class="cuisine-card" style="background-image: url('french-cuisine.jpg');">
+          <h3>French</h3>
+        </div>
+      </div>
+    </section>
+    <br>
+
+    <aside>
+      <h2 class="#Plantry Chef" id="Plantry Chef">Pantry Chef Tool</h2>
+      <p>Enter ingredients you have, and we'll suggest recipes just for you!</p>
+
+      <div class="pantry-input">
+        <input type="text" id="ingredient-input" placeholder="e.g, tomato, chicken, garlic,">
+        <button onclick="getRecipes">Find Recipes</button>
+      </div>
+
+      <div id="recipe-suggestions" class="suggestions">
+        <!-- Recipes suggestion will appear here -->
+      </div>
+ </main>
+     
   </body>
 </html>
   
